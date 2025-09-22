@@ -1,0 +1,17 @@
+{
+    "app_title": "MXD Pro - Multi-GPU Game Optimizer",
+    "tab_optimizer": "Optimizer",
+    "tab_system_info": "System Info",
+    "tab_logs_recovery": "Logs & Recovery",
+    "tab_security": "Security",
+    "tab_settings": "Settings",
+    "tab_benchmark": "Benchmark",
+
+    "file_menu": "&File",
+    "file_exit": "E&xit",
+    "help_menu": "&Help",
+    "help_about": "&About",
+
+    "about_title": "About MXD Pro",
+    "about_text": "MXD Pro\\nMulti-GPU, Multi-Game Optimizer\\n\\nby maherelattar207-beep and contributors\\nhttps://github.com/maherelattar207-beep\\nMIT License"
+}
