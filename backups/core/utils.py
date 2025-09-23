@@ -194,6 +194,15 @@ class SystemUtils:
                 logger.info(f"Removed: {path}")
             except Exception as e: logger.error(f"Failed to remove {path}: {e}")
 
+    @staticmethod
+    def verify_digital_signature():
+        """
+        Placeholder for verifying the digital signature of the application files.
+        In a real application, this would involve checking certificates against a trusted root.
+        """
+        # For this simulation, we'll assume the signature is always valid.
+        return True
+
 class SafeModeManager:
     def __init__(self, logger: MXDLogger, settings: SettingsManager): self.logger = logger
 class GameProfilesDatabase:
