@@ -10,8 +10,9 @@ class LogsPanel(QWidget):
     - Allows export, clear, and import/export of settings
     - Provides quick links to log file and backup directory
     """
-    def __init__(self, logger):
+    def __init__(self, settings, logger):
         super().__init__()
+        self.settings = settings
         self.logger = logger
         self._init_ui()
 
@@ -96,21 +97,17 @@ class LogsPanel(QWidget):
         QMessageBox.information(self, "Logs Cleared", "Log file cleared.")
 
     def _export_settings(self):
-        from core.settings_engine import SettingsManager
         path, _ = QFileDialog.getSaveFileName(self, "Export Settings", "mxdpro_settings_export.json", "JSON Files (*.json);;All Files (*)")
         if path:
-            sm = SettingsManager(self.logger)
-            if sm.export_all_settings(path):
+            if self.settings.export_all_settings(path):
                 QMessageBox.information(self, "Export Settings", f"Settings exported to {path}")
             else:
                 QMessageBox.critical(self, "Export Failed", "Failed to export settings.")
 
     def _import_settings(self):
-        from core.settings_engine import SettingsManager
         path, _ = QFileDialog.getOpenFileName(self, "Import Settings", "", "JSON Files (*.json);;All Files (*)")
         if path:
-            sm = SettingsManager(self.logger)
-            if sm.import_all_settings(path):
+            if self.settings.import_all_settings(path):
                 QMessageBox.information(self, "Import Settings", f"Settings imported from {path}")
                 self._refresh_logs()
             else:
