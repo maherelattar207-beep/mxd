@@ -1,0 +1,31 @@
+# MXD Pro - Ultimate Edition Feature Summary
+
+This document outlines the features of the application and their online requirements.
+
+## Core Engine
+- **AI-Powered Dynamic Optimizer:** Fully offline-capable. Learns locally from stability events.
+- **Offline System Booster:** Fully offline-capable.
+    - Advanced Temp Cleaner
+    - Safe Background Task Stopper
+    - Process Priority Manager
+    - Performance Mode Switcher
+- **Hardened Security Engine:**
+    - Signature Scanning: Offline-capable with the included database. (Database updates would require an online connection in a future version).
+    - Heuristic Analysis: Fully offline-capable.
+    - Behavioral Sandboxing: Fully offline-capable.
+- **Stability Monitor:** Fully offline-capable.
+- **Hardware Detector:** Fully offline-capable.
+- **Performance Modes:** Fully offline-capable.
+
+## User Interface & Features
+- **License Activation:** Requires a one-time activation. A master key is provided for fully offline testing.
+- **Personalized Welcome Flow:** Fully offline-capable after initial activation.
+- **Game Profiles:** Fully offline-capable. Import/Export functionality works with local files.
+- **Universal Help System:** Fully offline-capable. All tooltips are stored locally.
+- **Professional UI Theme:** Fully offline-capable.
+- **Quarantine Manager:** Fully offline-capable.
+- **Scan History:** Fully offline-capable.
+- **Beta Features:** All beta features are designed to be fully offline-capable.
+
+## Online-Required Features
+- **Cloud AI Threat Submission:** This is a planned future feature and is not implemented in the current version. If implemented, it would be the only feature requiring an active internet connection and would be completely optional.
